@@ -36,6 +36,8 @@ def show
 
 end
 
+
+
 def destroy
   
   @article.destroy
