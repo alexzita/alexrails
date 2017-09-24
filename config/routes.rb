@@ -5,4 +5,6 @@ root 'static_pages#home'
 get '/static_pages/about', to: 'static_pages#about'
 
 resources  :articles
+get 'signup', to:'users#new'
+resources :users, except: [:new]
 end
